@@ -1,11 +1,11 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-import RoomChat from "./chat/RoomChat.js";
+import RoomChat from "../admin/chat/RoomChat.js";
 
 function App() {
   return (
     <BrowserRouter>
       <Routes>
-        <Route path="/roomchat" element={<RoomChat />} />
+        <Route path="/admin/roomchat" element={<RoomChat />} />
       </Routes>
     </BrowserRouter>
   );

@@ -1,10 +1,14 @@
 import React from "react";
+import "bootstrap/dist/css/bootstrap.min.css";
 import ReactDOM from "react-dom";
-import App from "./App.js";
-
+import Admin from "./Admin.js";
+import Users from "./Users";
+import axios from "axios";
+axios.defaults.withCredentials = true;
 ReactDOM.render(
   <React.StrictMode>
-    <App />
+    <Admin />
+    <Users />
   </React.StrictMode>,
   document.getElementById("root")
 );
