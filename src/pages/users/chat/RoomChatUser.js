@@ -10,7 +10,7 @@ import NavbarComponent from "../../../components/users/Navbar";
 
 const socket = io.connect("http://localhost:5000");
 
-function RoomChat() {
+function RoomChatUser() {
   const [room, setRoom] = useState("");
   const [showChat, setShowChat] = useState(false);
   const [name, setName] = useState("Asep Bambang");
@@ -124,4 +124,4 @@ function RoomChat() {
   );
 }
 
-export default RoomChat;
+export default RoomChatUser;

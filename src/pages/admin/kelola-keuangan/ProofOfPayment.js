@@ -38,6 +38,7 @@ const ProofOfPayment = () => {
   const handleKonfirmasiPembayaran = async (e) => {
     e.preventDefault();
     setStatus("berhasil");
+
     try {
       await axios.patch(`http://localhost:5000/pembayaran/${id}`, {
         status,

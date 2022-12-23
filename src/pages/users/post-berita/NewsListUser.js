@@ -4,7 +4,7 @@ import NavbarComponent from "../../../components/users/Navbar";
 import { Link } from "react-router-dom";
 import { Card, Button } from "react-bootstrap";
 
-const NewsList = () => {
+const NewsListUser = () => {
   const [news, setNews] = useState([]);
 
   useEffect(() => {
@@ -72,4 +72,4 @@ const NewsList = () => {
   );
 };
 
-export default NewsList;
+export default NewsListUser;

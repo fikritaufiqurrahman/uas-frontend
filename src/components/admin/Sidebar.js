@@ -91,6 +91,14 @@ function Sidebar() {
                   </Link>
                 </Accordion.Body>
               </Accordion.Item>
+              <Accordion.Item eventKey="4">
+                <Accordion.Header>Kelola Akun</Accordion.Header>
+                <Accordion.Body>
+                  <Link to={"/users"}>
+                    <Button style={{ width: 330 }}>Login Sebagai User</Button>
+                  </Link>
+                </Accordion.Body>
+              </Accordion.Item>
             </Accordion>
           </div>
         </Offcanvas.Body>

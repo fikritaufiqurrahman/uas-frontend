@@ -18,10 +18,17 @@ import EditNews from "./pages/admin/post-berita/EditNews";
 
 import RoomChat from "./pages/admin/chat/RoomChat";
 
-function Admin() {
+import RoomChatUser from "./pages/users/chat/RoomChatUser";
+
+import CardUser from "./pages/users/dashboard/CardUser";
+import PayDues from "./pages/users/kelola-keuangan/PayDues";
+import NewsListUser from "./pages/users/post-berita/NewsListUser";
+
+function App() {
   return (
     <BrowserRouter>
       <Routes>
+        {/* Admin Route */}
         <Route path="/" element={<Login />}></Route>
         <Route path="/admin" element={<Card />}></Route>
 
@@ -39,9 +46,15 @@ function Admin() {
         <Route path="/admin/berita/edit/:id" element={<EditNews />} />
 
         <Route path="/admin/roomchat" element={<RoomChat />} />
+
+        {/* User Route */}
+        <Route path="/users" element={<CardUser />}></Route>
+        <Route path="/users/bayar" element={<PayDues />}></Route>
+        <Route path="/users/berita" element={<NewsListUser />}></Route>
+        <Route path="/users/roomchat" element={<RoomChatUser />}></Route>
       </Routes>
     </BrowserRouter>
   );
 }
 
-export default Admin;
+export default App;

@@ -5,7 +5,7 @@ import jwt_decode from "jwt-decode";
 import Form from "react-bootstrap/Form";
 import { useNavigate, useParams } from "react-router-dom";
 import NavbarComponent from "../../../components/users/Navbar";
-const EditStatus = () => {
+const PayDues = () => {
   const [status, setStatus] = useState("menunggu konfirmasi");
   const [name, setName] = useState("");
   const [hargaAir, setHargaAir] = useState("");
@@ -193,4 +193,4 @@ const EditStatus = () => {
   );
 };
 
-export default EditStatus;
+export default PayDues;
