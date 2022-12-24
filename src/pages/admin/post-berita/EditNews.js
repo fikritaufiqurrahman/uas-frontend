@@ -48,20 +48,6 @@ const EditNews = () => {
 
   return (
     <div>
-      {/* <Form onSubmit={updateUser}>
-        <Form.Group className="mb-3">
-          <Form.Label>
-            Input Pemakaian Air (M<sup>3</sup> )
-          </Form.Label>
-          <Form.Control
-            type="number"
-            placeholder="Enter price"
-            className="input"
-            value={air}
-            onChange={(e) => setAir(e.target.value)}
-          />
-        </Form.Group>
-      </Form> */}
       <Card style={{ width: "30rem", margin: "20px auto" }}>
         <div
           style={{
